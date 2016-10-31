@@ -84,3 +84,31 @@ ionic-typescript-blank/
 └── README.md                          * This file
 ```
 
+The initial mode of the calendar.    
+Default value: 'month'
+* showEventDetail    
+If set to true, when selecting the date in the month view, the events happened on that day will be shown below.    
+Default value: true
+* startingDayMonth    
+Control month view starting from which day.    
+Default value: 0
+* startingDayWeek    
+Control week view starting from which day.    
+Default value: 0
+* allDayLabel    
+The text displayed in the allDay column header.    
+Default value: ‘all day’
+* noEventsLabel    
+The text displayed when there’s no event on the selected date in month view.    
+Default value: ‘No Events’
+* eventSource    
+The data source of the calendar, when the eventSource is set, the view will be updated accordingly.    
+Default value: null    
+The format of the eventSource is described in the EventSource section
+* queryMode    
+If queryMode is set to 'local', when the range or mode is changed, the calendar will use the already bound eventSource to update the view    
+If queryMode is set to 'remote', when the range or mode is changed, the calendar will trigger a callback function rangeChanged.    
+Users will need to implement their custom loading data logic in this function, and fill it into the eventSource. The eventSource is watched, so the view will be updated once the eventSource is changed.    
+Default value: 'local'
+* step    
+It can be set to 15 or 30, so that the event can be displayed at more accurate position in weekview or dayview.
