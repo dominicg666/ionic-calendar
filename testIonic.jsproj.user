@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferenceCachePath>C:\Users\domin\AppData\Local\Temp\testIonic_refcache</ReferenceCachePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <DebuggerFlavor>RippleNexus</DebuggerFlavor>
+    <AndroidEmulatorID>97522427-7A5E-4F3B-96A8-B9F9F0C0423A;VS Emulator 5" Marshmallow (6.0.0) XXHDPI Phone</AndroidEmulatorID>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|iOS'">
+    <DebuggerFlavor>iOSEmulatoriPad2</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Windows Phone (Universal)'">
+    <DebuggerFlavor>WindowsMobileEmulator</DebuggerFlavor>
+    <WindowsMobileEmulatorID>A6BAF594-9315-40C3-AD16-F5B8A425A7AB;Emulator 8.1 WVGA 4 inch 512MB</WindowsMobileEmulatorID>
+  </PropertyGroup>
+</Project>
